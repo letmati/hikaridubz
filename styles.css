@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+  }
+
+#header {
+    padding: 40px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 10vh;
+    font-family: 'Bangers', cursive;
+}
+
+.sc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#scid {
+    width: 30%;
+}
+
+#ytid {
+    width: 44%;
+}
+
+.an {
+    display: flex;
+    justify-content: center;
+}
