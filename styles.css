@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+@media (min-width: 550px) {
+    .iframe {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .iframe {
+        width: 33.3%;
+    }
+}
+
 * {
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
     background-color: black;
   }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #header {
     padding: 40px;
