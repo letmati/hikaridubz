@@ -4,7 +4,7 @@
     "description": "Página de presentación del DJ Hikari Dubz",
     "background_color": "#eee",
     "theme_color": "#fef",
-    "start_url": "/index.html",
+    "start_url": "/hikaridubz/index.html",
     "lang": "es-AR",
     "display": "fullscreen",
     "orientation": "portrait",
