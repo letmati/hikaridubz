@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIKARI DUBZ</title>
+    <title>Hikari Dubz</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Metadata para PWA -->
+    <!-- Modificar color barra de estado ANDROID -->
+    <meta name="theme-color" content="#eee">
+    <!-- Optimizaciones de SEO -->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Modificar barra de estado IOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" 
+    content="black-translucent">
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="./assets/icons/icon512.png" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/icons/icon512.png">
+    <link rel="apple-touch-startup-image" href="./assets/icons/icon512.png" type="image/png">
+<!-- Manifest -->
+    <link rel="manifest" href="./js/manifest.json">
 </head>
+
+
 <body>
     <div id="header">
         HIKARI DUBZ
     </div>
     <div class="sc">
         <a class="an" href="https://soundcloud.com/ikaridubz">    
-            <img id="scid" src="./sc1.png">
+            <img id="scid" src="./assets/img/sc1.png">
         </a>
         <a href="https://www.youtube.com/channel/UCKycvFLM2Ep1Ud3Cj8BFboA">    
-            <img id="ytid" src="./yt.png">
+            <img id="ytid" src="./assets/img/yt.png">
         </a>
     </div>
     <main>
@@ -52,5 +71,15 @@
         allowfullscreen>
         </iframe>
     </main>
+
+
+<script>
+    if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+        .register("/sw.js")
+        .then((reg) => console.log("Registro Exitoso"))
+        .catch((err) => console.log(err));
+    }
+</script>
 </body>
 </html>
