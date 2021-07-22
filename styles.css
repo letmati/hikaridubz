@@ -33,21 +33,19 @@ main {
     font-family: 'Bangers', cursive;
 }
 
-.sc {
+.redes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 40px;
 }
 
-#scid {
+
+#png {
     width: 30%;
 }
 
-#ytid {
-    width: 44%;
-}
-
-.an {
+a {
     display: flex;
     justify-content: center;
+    max-width: 50%;
 }
